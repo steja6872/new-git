@@ -12,6 +12,8 @@ jobs:
         
       - name: Commit Changes
         run: |
+          git config --global user.name "steja6872"
+          git config --global user.email "steja6872@gmail.com"
           git add .
           git commit -m "Add desktop file"
           
