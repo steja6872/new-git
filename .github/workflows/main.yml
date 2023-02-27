@@ -21,8 +21,11 @@ jobs:
         
       - name: Commit Changes
         run: |
+             git init
+             git remote add origin https://github.com/steja6872/new-git.git
              git add .
              git commit -m "Add desktop file"
+             git push -u origin main
           
       - name: Push Changes
         uses: ad-m/github-push-action@master
