@@ -11,16 +11,18 @@ jobs:
         run: cp C:/Users/ACER/Desktop/prime.java C:/Users/ACER/new-git  
           
       - name: Add changes
-        run: git add C:/Users/ACER/new-git/prime.java
+        run: |
+            pwd
+            git add prime.java
 
-      - name: Commit changes
-        run: git commit -m "Add Java file"
+   #   - name: Commit changes
+    #    run: git commit -m "Add Java file"
 
-      - name: Push changes to GitHub
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GIT_TOKEN }}
-          branch: main     
+     # - name: Push changes to GitHub
+      #  uses: ad-m/github-push-action@master
+       # with:
+        #  github_token: ${{ secrets.GIT_TOKEN }}
+         # branch: main     
       
              
       
