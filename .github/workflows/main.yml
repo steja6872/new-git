@@ -17,8 +17,8 @@ jobs:
             git add prime.java
             git status
 
-   #   - name: Commit changes
-    #    run: git commit -m "Add Java file"
+      - name: Commit changes
+        run: git commit -m "Add Java file"
 
      # - name: Push changes to GitHub
       #  uses: ad-m/github-push-action@master
