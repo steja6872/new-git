@@ -14,9 +14,8 @@ jobs:
         run: |
             cd C:/Users/ACER/new-git
             pwd
+            git add prime.java
             git status
-         
-        #   git add prime.java
 
    #   - name: Commit changes
     #    run: git commit -m "Add Java file"
