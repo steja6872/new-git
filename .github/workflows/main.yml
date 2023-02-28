@@ -10,22 +10,26 @@ jobs:
       - name: Copy Desktop File
         run: cp C:/Users/ACER/Desktop/prime.java C:/Users/ACER/new-git
       
-      - name: Check git version
-        run: git --version
-        
+      - name: Set up Git
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
       - name: Configure Git
         run: |
-             git config --global user.email "steja6872@gmail.com"
-             git config --global user.name "steja6872"
-
-        
-      - name: Commit Changes
+          git config --global user.name "steja6872"
+          git config --global user.email "steja6872@gmail.com"
+      
+      - name: Commit changes
         run: |
-             git init
-             git remote add origin https://github.com/steja6872/new-git.git
-             git add .
-             git commit -m "Add desktop file"
-             git push -u origin main
-          
-      - name: Push Changes
+          git add .
+          git commit -m "Add prime.java file"
+      
+      - name: Push changes
         uses: ad-m/github-push-action@master
+        
+
+
+
+
+
+
