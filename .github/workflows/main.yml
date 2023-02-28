@@ -8,13 +8,7 @@ jobs:
       - uses: actions/checkout@v2
         
       - name: Copy Desktop File
-        run: cp C:/Users/ACER/Desktop/prime.java C:/Users/ACER/new-git
-      
-      - name: Push changes to GitHub
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GIT_TOKEN }}
-          branch: main       
+        run: cp C:/Users/ACER/Desktop/prime.java C:/Users/ACER/new-git  
           
       - name: Add changes
         run: git add prime.java
@@ -22,6 +16,11 @@ jobs:
       - name: Commit changes
         run: git commit -m "Add Java file"
 
+      - name: Push changes to GitHub
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GIT_TOKEN }}
+          branch: main     
       
              
       
