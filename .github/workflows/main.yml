@@ -13,7 +13,7 @@ jobs:
       - name: Add changes
         run: |
             pwd
-            git add prime.java
+        #    git add prime.java
 
    #   - name: Commit changes
     #    run: git commit -m "Add Java file"
