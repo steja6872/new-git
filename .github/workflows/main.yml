@@ -1,0 +1,21 @@
+name: Push Desktop File to GitHub
+on: [push]
+   
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v2
+        
+      - name: Copy Desktop File
+        run: cp C:/Users/ACER/Desktop/prime.java C:/Users/ACER/new-git  
+          
+      - name: Add changes
+        run: |
+            cd C:/Users/ACER/new-git
+            pwd
+            git add prime.java
+            git commit -m "Add Java file"
+            git status
+            git pull
+            git push -u origin main
