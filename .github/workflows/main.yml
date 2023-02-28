@@ -13,7 +13,7 @@ jobs:
       - name: Add changes
         run: |
             cd C:/Users/ACER/new-git
-            ls -la
+            pwd
             git status
          
         #   git add prime.java
