@@ -17,4 +17,5 @@ jobs:
             git add prime.java
             git commit -m "Add Java file"
             git status
+            git pull
             git push -u origin main
