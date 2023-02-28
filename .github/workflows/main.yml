@@ -10,6 +10,7 @@ jobs:
       - name: Copy Desktop File
         run: |
              cp C:/Users/ACER/Desktop/prime.java C:/Users/ACER/new-git
+             git remote add origin https://github.com/steja6872/new-git.git
              git add prime.java
              git commit -m "Add prime.java file"
              git push -u origin main
