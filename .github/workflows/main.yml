@@ -11,7 +11,7 @@ jobs:
         run: cp C:/Users/ACER/Desktop/prime.java C:/Users/ACER/new-git  
           
       - name: Add changes
-        run: git add prime.java
+        run: git add C:/Users/ACER/new-git/prime.java
 
       - name: Commit changes
         run: git commit -m "Add Java file"
